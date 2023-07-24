@@ -145,21 +145,21 @@ main p{
 /*INICIO mobile*/
 .titulo-index{
     text-align: center;
-    font size:  1.2rem;
+    font-size:  0.8rem;
 }
 .parrafo-index{
     text-align: center;
-    font size: 0.8rem ;
+    font-size: 0.8rem ;
 }
 
 /*SOBREMI mobile*/
 .titulo-sobremi{
     text-align: center;
-    font size: 0.8rem;
+    font-size: 0.8rem;
 }
 .parrafo-sobremi{
     text-align: center;
-    font size: 0.9rem;
+    font-size: 0.9rem;
 }
 
 
