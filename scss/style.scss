@@ -1,17 +1,13 @@
-// reset
-/*Reset*/
-
-* {
+/*reset*/
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: 0;
 }
 
-// estilos generales
-/* estilos generales */
+/*estilos generales*/
 
-// logo principal
-/*logo principal*/
+/* logo principal */
 .logo-principal {
     background-color: white;
     display: inline-block;
@@ -19,278 +15,186 @@
     width: 100%;
     height: auto;
     text-align: center;
-}
+  }
 
-// index
-/* index*/
-body {
+/*index*/
+body{
     background-image: url(../img/FoNDo.jpeg);
     background-size: cover;
     text-align: center;
 }
-
-header {
-    nav {
-        ul {
-            li {
-                padding-left: 10px;
-                display: inline;
-
-                a {
-                    text-decoration: none;
-                }
+header nav ul li{
+    padding-left: 10px;
+    
+    display: inline;
+}
+header nav ul li a{
+    text-decoration: none;
+}
+header .logo{
+    text-align: center;
             }
-        }
+main{
+     text-align: center;
     }
-
-    .logo {
-        text-align: center;
-    }
+main .yo1{
+    width: 450px;
+    height: 450px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
-main {
+footer{
     text-align: center;
-
-    .yo1,
-    .costa1,
-    .familia,
-    .experiencia,
-    .contacto {
-        width: 100%;
-        height: auto;
-        margin: 20px 0;
-    }
-
-    .experiencia,
-    .contacto {
-        display: flex;
-    }
-
-    .image-container {
+}
+/* sobre mi */
+main p a{
+    text-decoration: none;
+}
+.image-container {
         display: inline;
-
-        img {
-            margin-right: 50px;
-            width: 100%;
-            height: auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-    }
 }
 
-.texto1,
-.texto2 {
+.image-container img {
+        margin-right: 50px;
+        width: 450x; 
+        height: 450px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+/* resume */
+
+main .costa1{
+    width: 450px;
+    height: 450px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+main .texto1{
+    display: inline-block;    
+    text-align: center;
+}
+main .familia{ 
+    width: 450px;
+    height: 450px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+main .texto2{
     display: inline-block;
-
-    @media (max-width:576px) {
-        display: block;
-    }
 }
 
-footer {
-    text-align: center;
-}
-
-//estilo generales para titulos y parrafos 
-/*estilo generales para titulos y parrafos*/
-h1 {
-    font-size: 24px;
-}
-
-main {
-    font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: none;
-    color: rgba(88, 36, 5, 0.87);
-    text-align: center;
-}
-
-// sobre mi
-/*sobre mi*/
-main {
-    p {
-        a {
-            text-decoration: none;
-        }
-    }
-
-    .image-container {
-        display: inline;
-
-        img {
-            margin-right: 50px;
-            width: 450px;
-            height: 450px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-    }
-}
-
-// resume
-/*resume */
-main {
-    .costa1 {
-        width: 450px;
-        height: 450px;
-        margin-bottom: 20px;
-        margin-right: 10px;
-        display: flex;
-    }
-
-    .texto1 {
-        display: inline-block;
-        text-align: center;
-        display: flex;
-    }
-
-    .familia {
-        width: 450px;
-        height: 450px;
-        margin-bottom: 20px;
-        margin-left: 10px;
-        display: flex;
-    }
-
-    .texto2 {
-        display: inline-block;
-    }
-}
-
-// experiencia
 /* experiencia */
-main {
-    .experiencia {
-        width: 350px;
-        height: 400px;
-        margin-bottom: 15px;
-        margin-top: 20px;
-        margin-left: 20px;
-        display: flex;
-    }
+
+
+
+main .experiencia{
+    width: 350px;
+    height: 400px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
-// contacto
-/*contacto */
-main {
-    .contacto {
-        width: 350px;
-        height: 400px;
-        margin-bottom: 15px;
-        margin-top: 20px;
-        margin-left: 20px;
-        display: flex;
-    }
+/* contacto */
+main .contacto{
+    width: 500px;
+    height:250px;
+    margin-top: 15px;
+    
 }
 
-// Estilos específicos para dispositivos móviles
-// Arrancamos con mobile first
-/*Estilos para dispositivos moviles, arrancamos*/
-@media (max-width: 575.98px) {
-    .navbar {
-        box-shadow: none;
-        background-color: white;
-        display: flex;
-    }
+/* Estilos generales para dispositivos móviles y de escritorio */
+h1 {
+  font-size: 24px;
+}
 
-    .navbar-collapse {
-        display: flex;
-        text-align: end;
-    }
+main p{
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: none;
+  color: rgba(88, 36, 5, 0.87);
+  text-align: center;
+}
 
-    .nav-link {
-        font-size: 1.2rem;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: black;
-        display: flex;
-    }
+/* Estilos específicos para dispositivos móviles */
+/*Arrancamos con mobile first */
 
-    .footer {
-        text-align: center;
-        font-size: 1rem;
-        color: black;
-        display: flex;
-    }
+@media (max-width:575.98px) {
+.navbar{
+    box-shadow: none;
+    background-color: white;
+}
+.navbar-collapse{
+    display: flex;
+    text-align: end;
 
-    // INICIO mobile
-    /*Inicio mobile*/
-    .titulo-index {
-        text-align: center;
-        font-size: 0.8rem;
-        display: flex;
-    }
+}
+.nav-link{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black;
+}
+.footer{
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+}
+/*INICIO mobile*/
+.titulo-index{
+    text-align: center;
+    font-size:  0.8rem;
+}
+.parrafo-index{
+    text-align: center;
+    font-size: 0.8rem ;
+}
 
-    .parrafo-index {
-        text-align: center;
-        font-size: 0.8rem;
-        display: flex;
-    }
+/*SOBREMI mobile*/
+.titulo-sobremi{
+    text-align: center;
+    font-size: 0.8rem;
+}
+.parrafo-sobremi{
+    text-align: center;
+    font-size: 0.9rem;
+}
 
-    // SOBREMI mobile
-    /*Sobremi mobile*/
-    .titulo-sobremi {
-        text-align: center;
-        font-size: 0.8rem;
-        display: flex;
-    }
 
-    .parrafo-sobremi {
-        text-align: center;
-        font-size: 0.9rem;
-        display: flex;
-    }
+/* RESUME mobile*/
+.titulo-resume{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.parrafor-resume-uno{
+    text-align: center;
+    font-size: 0.8rem;
+}
+.parrafo-resume-dos{
+    text-align: center;
+    font-size: 0.8rem;
+}
 
-    // RESUME mobile
-    /* resume mobile */
-    .titulo-resume {
-        text-align: center;
-        font-size: 1.2rem;
-        display: flex;
-    }
+/* EXPERIENCIA mobile*/
+.titulo-experiencia{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.parrafo-experiencia{
+    text-align: center;
+    font-size:0.8rem;
+}
 
-    .parrafor-resume-uno {
-        text-align: center;
-        font-size: 0.8rem;
-        display: flex;
-    }
+/* CONTACTO mobile*/
+.titulo-contacto{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.parrafo-contacto, .parrafo-contacto-uno, .parrafo-contacto-dos, .parrafo-contacto-tres{
+    text-align: center;
+    font-size:0.8rem;
+}
 
-    .parrafo-resume-dos {
-        text-align: center;
-        font-size: 0.8rem;
-        display: flex;
-    }
-
-    // EXPERIENCIA mobile
-    /* experiencia mobile*/
-    .titulo-experiencia {
-        text-align: center;
-        font-size: 1.2rem;
-        display: flex;
-    }
-
-    .parrafo-experiencia {
-        text-align: center;
-        font-size: 0.8rem;
-        display: flex;
-    }
-
-    // CONTACTO mobile
-    /* contacto mobile*/
-    .titulo-contacto {
-        text-align: center;
-        font-size: 1.2rem;
-        display: flex;
-    }
-
-    .parrafo-contacto,
-    .parrafo-contacto-uno,
-    .parrafo-contacto-dos,
-    .parrafo-contacto-tres {
-        text-align: center;
-        font-size: 0.8rem;
-        display: inline-block;
-    }
 }
