@@ -118,15 +118,83 @@ main p{
 }
 
 /* Estilos específicos para dispositivos móviles */
-@media screen and (max-width: 767px) {
-  h1 {
-    font-size: 25px;
-    background-color: #F8F9FA;
+/*Arrancamos con mobile first */
+
+@media (max-width:575.98px) {
+.navbar{
+    box-shadow: none;
+    background-color: white;
+}
+.navbar-collapse{
+    display: flex;
+    text-align: end;
+
+}
+.nav-link{
+    font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black;
+}
+.footer{
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+}
+/*INICIO mobile*/
+.titulo-index{
+    text-align: center;
+    font size:  1.2rem;
+}
+.parrafo-index{
+    text-align: center;
+    font size: 0.8rem ;
 }
 
-  p {
-    font-size: 14px;
-  }
+/*SOBREMI mobile*/
+.titulo-sobremi{
+    text-align: center;
+    font size: 0.8rem;
+}
+.parrafo-sobremi{
+    text-align: center;
+    font size: 0.9rem;
 }
 
+
+/* RESUME mobile*/
+.titulo-resume{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.parrafor-resume-uno{
+    text-align: center;
+    font-size: 0.8rem;
+}
+.parrafo-resume-dos{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/* EXPERIENCIA mobile*/
+.titulo-experiencia{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.parrafo-experiencia{
+    text-align: center;
+    font-size:0.8rem;
+}
+
+/* CONTACTO mobile*/
+.titulo-contacto{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.parrafo-contacto, .parrafo-contacto-uno, .parrafo-contacto-dos, .parrafo-contacto-tres{
+    text-align: center;
+    font-size:0.8rem;
+}
+
+}
