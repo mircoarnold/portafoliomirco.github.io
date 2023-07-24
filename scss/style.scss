@@ -93,11 +93,13 @@ main {
         height: 450px;
         margin-bottom: 20px;
         margin-right: 10px;
+        display: flex;
     }
 
     .texto1 {
         display: inline-block;
         text-align: center;
+        display: flex;
     }
 
     .familia {
@@ -105,6 +107,7 @@ main {
         height: 450px;
         margin-bottom: 20px;
         margin-left: 10px;
+        display: flex;
     }
 
     .texto2 {
@@ -121,6 +124,7 @@ main {
         margin-bottom: 15px;
         margin-top: 20px;
         margin-left: 20px;
+        display: flex;
     }
 }
 
@@ -131,6 +135,7 @@ main {
         width: 500px;
         height: 250px;
         margin-top: 15px;
+        display: flex;
     }
 }
 
@@ -138,6 +143,7 @@ main {
 /*Estilos generales para dispositivos moviles y de escritorio*/
 h1 {
     font-size: 24px;
+    display: flex;
 }
 
 main {
@@ -147,6 +153,7 @@ main {
         background-color: none;
         color: rgba(88, 36, 5, 0.87);
         text-align: center;
+        display: flex;
     }
 }
 
@@ -157,6 +164,7 @@ main {
     .navbar {
         box-shadow: none;
         background-color: white;
+        display: flex;
     }
 
     .navbar-collapse {
@@ -170,12 +178,14 @@ main {
         font-weight: 500;
         text-transform: uppercase;
         color: black;
+        display: flex;
     }
 
     .footer {
         text-align: center;
         font-size: 1rem;
         color: black;
+        display: flex;
     }
 
     // INICIO mobile
@@ -183,11 +193,13 @@ main {
     .titulo-index {
         text-align: center;
         font-size: 0.8rem;
+        display: flex;
     }
 
     .parrafo-index {
         text-align: center;
         font-size: 0.8rem;
+        display: flex;
     }
 
     // SOBREMI mobile
@@ -195,11 +207,13 @@ main {
     .titulo-sobremi {
         text-align: center;
         font-size: 0.8rem;
+        display: flex;
     }
 
     .parrafo-sobremi {
         text-align: center;
         font-size: 0.9rem;
+        display: flex;
     }
 
     // RESUME mobile
@@ -207,16 +221,19 @@ main {
     .titulo-resume {
         text-align: center;
         font-size: 1.2rem;
+        display: flex;
     }
 
     .parrafor-resume-uno {
         text-align: center;
         font-size: 0.8rem;
+        display: flex;
     }
 
     .parrafo-resume-dos {
         text-align: center;
         font-size: 0.8rem;
+        display: flex;
     }
 
     // EXPERIENCIA mobile
@@ -224,11 +241,13 @@ main {
     .titulo-experiencia {
         text-align: center;
         font-size: 1.2rem;
+        display: flex;
     }
 
     .parrafo-experiencia {
         text-align: center;
         font-size: 0.8rem;
+        display: flex;
     }
 
     // CONTACTO mobile
@@ -236,6 +255,7 @@ main {
     .titulo-contacto {
         text-align: center;
         font-size: 1.2rem;
+        display: flex;
     }
 
     .parrafo-contacto,
@@ -244,5 +264,6 @@ main {
     .parrafo-contacto-tres {
         text-align: center;
         font-size: 0.8rem;
+        display: inline-block;
     }
 }
