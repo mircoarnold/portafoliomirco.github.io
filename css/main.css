@@ -31,13 +31,46 @@ header .logo {
 
 main {
   text-align: center; }
-  main .yo1 {
-    width: 450px;
-    height: 450px;
-    margin-top: 20px;
-    margin-bottom: 20px; }
+  main .yo1,
+  main .costa1,
+  main .familia,
+  main .experiencia,
+  main .contacto {
+    width: 100%;
+    height: auto;
+    margin: 20px 0; }
+  main .experiencia,
+  main .contacto {
+    display: flex; }
+  main .image-container {
+    display: inline; }
+    main .image-container img {
+      margin-right: 50px;
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+
+.texto1,
+.texto2 {
+  display: inline-block; }
+  @media (max-width: 576px) {
+    .texto1,
+    .texto2 {
+      display: block; } }
 
 footer {
+  text-align: center; }
+
+/*estilo generales para titulos y parrafos*/
+h1 {
+  font-size: 24px; }
+
+main {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: none;
+  color: rgba(88, 36, 5, 0.87);
   text-align: center; }
 
 /*sobre mi*/
@@ -92,19 +125,6 @@ main .contacto {
   margin-bottom: 15px;
   margin-top: 20px;
   margin-left: 20px;
-  display: flex; }
-
-/*Estilos generales para dispositivos moviles y de escritorio*/
-h1 {
-  font-size: 24px;
-  display: flex; }
-
-main p {
-  font-size: 16px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: none;
-  color: rgba(88, 36, 5, 0.87);
-  text-align: center;
   display: flex; }
 
 /*Estilos para dispositivos moviles, arrancamos*/
