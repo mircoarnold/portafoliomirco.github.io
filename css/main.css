@@ -1,32 +1,238 @@
+@charset "UTF-8";
 /*reset*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: 0; }
 
-/*Estilo generales*/
-header logo-principal {
+/*Body todos html*/
+body {
+  background-image: url(../img/FoNDo.jpeg);
+  background-size: cover; }
+
+/*Header todos los html*/
+header .logo-principal {
   background-color: white;
   display: inline-block;
   white-space: nowrap;
   width: 100%;
   height: auto;
-  text-align: center; }
-
-header nav {
-  padding-left: 10px;
-  display: inline;
+  text-align: center;
   text-decoration: none; }
 
-header image-container img {
-  display: block;
-  margin-right: 50px;
-  width: 450px;
-  height: 450px;
-  margin-top: 20px;
-  margin-bottom: 20px; }
+footer {
+  background-color: none;
+  text-align: center;
+  color: black;
+  font-size: large; }
 
-body {
-  /* background-image:url(../img/FoNDo.jpeg); - Prueba sin imagen de fondo*/
-  background-size: cover;
+/*Index html*/
+.index-main {
   text-align: center; }
+  .index-main .imagen-index {
+    width: 350px;
+    height: 400px;
+    margin: auto; }
+  .index-main .titulo-index {
+    background-color: none;
+    background-size: cover;
+    text-align: center; }
+  .index-main .parrafo-index {
+    text-align: center; }
+  .index-main li {
+    padding-left: 10px;
+    display: inline; }
+  .index-main a {
+    text-decoration: none; }
+
+/*Sobre Mi*/
+.image-container-uno {
+  display: flex;
+  justify-content: center; }
+  .image-container-uno .cliente1 {
+    width: 20rem;
+    height: 20rem;
+    padding-right: 2rem; }
+  .image-container-uno .cliente2 {
+    width: 20rem;
+    height: 20rem; }
+
+a {
+  text-decoration: none; }
+
+.image-container {
+  display: inline; }
+
+/* resume */
+.main-resume {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+  .main-resume .costa1 {
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem; }
+  .main-resume .texto1 {
+    display: inline-block;
+    text-align: center; }
+  .main-resume .familia {
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem; }
+  .main-resume .texto2 {
+    display: inline-block; }
+
+/* experiencia */
+.main-experiencia {
+  text-align: center; }
+  .main-experiencia .experiencia {
+    width: 20rem;
+    height: 20rem; }
+
+/* contacto */
+.main-contacto {
+  text-align: center; }
+
+/* Estilos generales para dispositivos móviles y de escritorio */
+h1 {
+  font-size: 24px; }
+
+main p {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: none;
+  color: rgba(88, 36, 5, 0.87);
+  text-align: center; }
+
+/* Estilos específicos para dispositivos móviles */
+/*Arrancamos con mobile first */
+@media (max-width: 575.98px) {
+  /*INICIO mobile*/
+  .logo-principal {
+    display: flex; }
+    .logo-principal .logo {
+      height: 8rem;
+      width: 15rem;
+      margin: auto; }
+  .navbar {
+    box-shadow: none;
+    background-color: white;
+    text-transform: uppercase; }
+    .navbar .navbar-collapse {
+      display: flex;
+      text-align: end; }
+      .navbar .navbar-collapse .nav-link {
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: black; }
+  footer {
+    text-align: center;
+    font-size: 1rem;
+    color: black; }
+    footer p {
+      margin-top: 2rem; }
+  .index-main .titulo-index {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.5rem; }
+  .index-main .parrafo-index {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem; }
+  /*SOBREMI mobile*/
+  .titulo-sobremi {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem; }
+  .parrafo-sobremi {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem; }
+  .parrafo-sobremi-dos {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem; }
+  .image-container-uno {
+    display: flex;
+    flex-direction: row; }
+    .image-container-uno .cliente1 {
+      width: 15rem;
+      height: 12rem;
+      margin: 1rem; }
+    .image-container-uno .cliente2 {
+      width: 15rem;
+      height: 12rem;
+      margin: 1rem; }
+  /* RESUME mobile*/
+  .titulo-resume {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem; }
+  .parrafor-resume-uno {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem; }
+  .parrafo-resume-dos {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem; }
+  .texto1 {
+    text-align: center;
+    display: flex;
+    margin-left: 0.3rem; }
+    .texto1 .costa1 {
+      width: 25rem;
+      height: 10rem; }
+  .texto2 {
+    text-align: center;
+    display: flex;
+    font-size: 0.8rem;
+    margin-left: 0.3rem; }
+  .familia {
+    width: 25rem;
+    height: 10rem; } }
+
+/* EXPERIENCIA mobile*/
+.titulo-experiencia {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1.2rem; }
+
+.parrafo-experiencia {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1.2rem; }
+
+/* CONTACTO mobile*/
+.main-contacto {
+  text-align: center; }
+  .main-contacto .titulo-contacto {
+    text-align: center;
+    font-size: 2rem;
+    font-size: large;
+    margin-top: 2rem;
+    text-transform: uppercase; }
+  .main-contacto .parrafo-contacto,
+  .main-contacto .parrafo-contacto-uno,
+  .main-contacto .parrafo-contacto-dos,
+  .main-contacto .parrafo-contacto-tres {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 1.2rem;
+    margin-right: 1.2rem; }
+  .main-contacto .contacto {
+    width: 15rem;
+    height: 10rem;
+    margin-left: 4rem; }

@@ -1,40 +1,342 @@
-//Reset
 /*reset*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: 0;
 }
 
-//Estilos Generales
-/*Estilo generales*/
-header{
-    logo-principal{
+
+//Body todos html
+/*Body todos html*/
+body {
+    background-image: url(../img/FoNDo.jpeg);
+    background-size: cover;
+}
+//Header 
+/*Header todos los html*/
+header {
+    .logo-principal {
         background-color: white;
         display: inline-block;
         white-space: nowrap;
         width: 100%;
         height: auto;
         text-align: center;
-    }
-    nav{
-        padding-left: 10px;
-        display: inline;
         text-decoration: none;
     }
-    image-container img{
-        display: block;
-        margin-right: 50px;
-        width: 450px;
-        height: 450px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+}
+footer{
+    background-color: none;
+    text-align: center;
+    color: black;
+    font-size: large;
+}
+//Index html
+/*Index html*/
+
+.index-main {
+    text-align: center;
+
+    .imagen-index {
+        width: 350px;
+        height: 400px;
+        margin: auto;
     }
 
+    .titulo-index {
+        background-color: none;
+        background-size: cover;
+        text-align: center;
+    }
+
+    .parrafo-index {
+        text-align: center;
+    }
+
+    li {
+        padding-left: 10px;
+        display: inline;
+    }
+
+    a {
+        text-decoration: none;
+    }
 
 }
-body{
-    /* background-image:url(../img/FoNDo.jpeg); - Prueba sin imagen de fondo*/
-    background-size: cover;
+
+    //Sobre mi
+    /*Sobre Mi*/
+    .image-container-uno{
+        display: flex;
+        justify-content: center;
+        
+        .cliente1 {
+            width: 20rem;
+            height: 20rem;
+            padding-right: 2rem;
+            
+        }
+    
+        .cliente2 {
+            width: 20rem;
+            height: 20rem;
+            }
+}
+
+a {
+    text-decoration: none;
+}
+
+.image-container {
+    display: inline;
+}
+
+
+
+/* resume */
+.main-resume{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    .costa1 {
+        width: 20rem;
+        height: 20rem;
+        margin-bottom: 2rem;
+        margin-right: 1rem;
+    }
+    
+    .texto1 {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .familia {
+        width: 20rem;
+        height: 20rem;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+    }
+    
+    .texto2 {
+        display: inline-block;
+    }
+}
+
+
+/* experiencia */
+
+
+
+.main-experiencia {
+    text-align: center;
+    .experiencia{
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+/* contacto */
+.main-contacto {
+    text-align: center;
+
+}
+
+/* Estilos generales para dispositivos móviles y de escritorio */
+h1 {
+    font-size: 24px;
+}
+
+main p {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: none;
+    color: rgba(88, 36, 5, 0.87);
     text-align: center;
 }
+
+/* Estilos específicos para dispositivos móviles */
+/*Arrancamos con mobile first */
+ 
+@media (max-width:575.98px) {
+ /*INICIO mobile*/
+    .logo-principal{
+        display: flex;
+        
+        .logo{
+            height: 8rem;
+            width: 15rem;
+            margin: auto;
+        }
+    }
+    .navbar {
+        box-shadow: none;
+        background-color: white;
+        text-transform: uppercase;
+        .navbar-collapse {
+            display: flex;
+            text-align: end;
+            .nav-link {
+                font-size: 1.2rem;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: black;
+            }
+        }
+        
+    }
+
+    footer {
+        text-align: center;
+        font-size: 1rem;
+        color: black;
+        p{
+            margin-top: 2rem;
+        }
+    }
+
+   
+    .index-main{
+        .titulo-index {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 1.5rem;
+    
+        }
+        .parrafo-index {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+    
+
+    /*SOBREMI mobile*/
+    .titulo-sobremi {
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 1.2rem;
+    }
+    .parrafo-sobremi {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+    }    
+    .parrafo-sobremi-dos{
+        text-align: center;
+        font-size:1rem;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+    .image-container-uno{
+        display: flex;
+        flex-direction: row;
+        .cliente1{
+            width: 15rem;
+            height: 12rem;
+            margin: 1rem;
+        }
+        .cliente2{
+            width: 15rem;
+            height: 12rem;
+            margin: 1rem;
+        }
+    }
+
+    /* RESUME mobile*/
+    .titulo-resume {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .parrafor-resume-uno {
+        text-align: center;
+        font-size:0.8rem;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+        
+    }
+
+    .parrafo-resume-dos {
+        text-align: center;
+        font-size: 0.8rem;
+        margin-top: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+    .texto1{
+        text-align: center;
+        display: flex;
+        margin-left: 0.3rem;
+        
+        .costa1{
+            width: 25rem;
+            height: 10rem;
+            }
+    }
+    
+    .texto2{
+        text-align: center;
+        display: flex;
+        font-size: 0.8rem;
+        margin-left: 0.3rem}
+        .familia{
+            width: 25rem;
+            height: 10rem;
+            }
+    }
+    
+
+    /* EXPERIENCIA mobile*/
+    .titulo-experiencia {
+        font-size:1.5rem;
+        text-align: center;
+        margin-top:1.2rem;
+    }
+    .parrafo-experiencia {
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 1.2rem;
+    }
+
+    
+    
+    /* CONTACTO mobile*/
+    .main-contacto{
+        text-align: center;
+        .mapa-contacto{
+
+        }
+        .titulo-contacto {
+            text-align: center;
+            font-size: 2rem;
+            font-size: large;
+            margin-top: 2rem;
+            text-transform: uppercase;
+        
+        }
+
+    .parrafo-contacto,
+    .parrafo-contacto-uno,
+    .parrafo-contacto-dos,
+    .parrafo-contacto-tres {
+        text-align: center;
+        font-size: 0.8rem;
+        margin-top: 1.2rem;
+        margin-right: 1.2rem;
+    }
+    .contacto{
+        width: 15rem;
+        height: 10rem;
+        margin-left: 4rem;
+    }
+    }
+
+    
+
+    
