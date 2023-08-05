@@ -3,14 +3,21 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0; }
+  box-sizing: 0;
+}
 
+/*Mixin para footer*/
 /*Body todos html*/
 body {
-  background-image: url(../img/FoNDo.jpeg);
-  background-size: cover; }
+  background-image: url(../img/FoNDo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 /*Header todos los html*/
+header {
+  background-color: white;
+}
 header .logo-principal {
   background-color: white;
   display: inline-block;
@@ -18,212 +25,342 @@ header .logo-principal {
   width: 100%;
   height: auto;
   text-align: center;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 footer {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #009097;
   background-color: none;
   text-align: center;
-  color: black;
-  font-size: large; }
+  font-size: large;
+  margin-top: 2rem;
+}
 
 /*Index html*/
 .index-main {
-  text-align: center; }
-  .index-main .imagen-index {
-    width: 350px;
-    height: 400px;
-    margin: auto; }
-  .index-main .titulo-index {
-    background-color: none;
-    background-size: cover;
-    text-align: center; }
-  .index-main .parrafo-index {
-    text-align: center; }
-  .index-main li {
-    padding-left: 10px;
-    display: inline; }
-  .index-main a {
-    text-decoration: none; }
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+.index-main .titulo-index {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+.index-main .imagen-index {
+  width: 350px;
+  height: 400px;
+  margin: auto;
+}
+.index-main .titulo-index {
+  background-color: none;
+  background-size: cover;
+  text-align: center;
+}
+.index-main .parrafo-index {
+  text-align: center;
+}
+.index-main li {
+  padding-left: 10px;
+  display: inline;
+}
+.index-main a {
+  text-decoration: none;
+}
 
 /*Sobre Mi*/
+.main-sobremi {
+  background-image: url(../img/FoNDo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.titulo-sobremi {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.parrafo-sobremi {
+  font-size: 1.2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.parrafo-sobremi-dos {
+  font-size: 1.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .image-container-uno {
   display: flex;
-  justify-content: center; }
-  .image-container-uno .cliente1 {
-    width: 20rem;
-    height: 20rem;
-    padding-right: 2rem; }
-  .image-container-uno .cliente2 {
-    width: 20rem;
-    height: 20rem; }
+  justify-content: center;
+}
+.image-container-uno .cliente-uno {
+  width: 20rem;
+  height: 18rem;
+  padding-right: 2rem;
+}
+.image-container-uno .cliente-dos {
+  width: 20rem;
+  height: 18rem;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .image-container {
-  display: inline; }
+  display: inline;
+}
 
 /* resume */
 .main-resume {
+  background-image: url(../img/FoNDo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center; }
-  .main-resume .costa1 {
-    width: 20rem;
-    height: 20rem;
-    margin-bottom: 2rem;
-    margin-right: 1rem; }
-  .main-resume .texto1 {
-    display: inline-block;
-    text-align: center; }
-  .main-resume .familia {
-    width: 20rem;
-    height: 20rem;
-    margin-bottom: 2rem;
-    margin-left: 1rem; }
-  .main-resume .texto2 {
-    display: inline-block; }
+  text-align: center;
+}
+.main-resume .titulo-resume {
+  font-size: 2rem;
+  margin: 2rem;
+}
+.main-resume .parrafo-resume-uno {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.main-resume .parrafo-resume-dos {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-resume .costa1 {
+  width: 20rem;
+  height: 20rem;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+}
+.main-resume .texto1 {
+  display: inline-block;
+  text-align: center;
+}
+.main-resume .familia {
+  width: 20rem;
+  height: 20rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
+.main-resume .texto2 {
+  display: inline-block;
+}
 
 /* experiencia */
 .main-experiencia {
-  text-align: center; }
-  .main-experiencia .experiencia {
-    width: 20rem;
-    height: 20rem; }
+  background-image: url(../img/FoNDo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.main-experiencia .titulo-experiencia {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+.main-experiencia .experiencia {
+  width: 20rem;
+  height: 20rem;
+}
 
 /* contacto */
 .main-contacto {
-  text-align: center; }
+  background-image: url(../img/FoNDo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: cadetblue;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+.main-contacto .titulo-contacto {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+.main-contacto .formulario-contacto {
+  display: flex;
+  justify-content: center;
+}
 
 /* Estilos generales para dispositivos móviles y de escritorio */
 h1 {
-  font-size: 24px; }
+  color: cadetblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
 
 main p {
   font-size: 16px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: none;
-  color: rgba(88, 36, 5, 0.87);
-  text-align: center; }
+  color: rgba(20, 20, 19, 0.87);
+  text-align: center;
+}
 
 /* Estilos específicos para dispositivos móviles */
 /*Arrancamos con mobile first */
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
+  .body-fondo {
+    background-image: url(../img/FoNDo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   /*INICIO mobile*/
   .logo-principal {
-    display: flex; }
-    .logo-principal .logo {
-      height: 8rem;
-      width: 15rem;
-      margin: auto; }
+    display: flex;
+  }
+  .logo-principal .logo {
+    height: 8rem;
+    width: 15rem;
+    margin: auto;
+  }
   .navbar {
     box-shadow: none;
     background-color: white;
-    text-transform: uppercase; }
-    .navbar .navbar-collapse {
-      display: flex;
-      text-align: end; }
-      .navbar .navbar-collapse .nav-link {
-        font-size: 1.2rem;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: black; }
+    text-transform: uppercase;
+  }
+  .navbar .navbar-collapse {
+    display: flex;
+    text-align: end;
+  }
+  .navbar .navbar-collapse .nav-link {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black;
+  }
   footer {
     text-align: center;
     font-size: 1rem;
-    color: black; }
-    footer p {
-      margin-top: 2rem; }
+    color: black;
+  }
+  footer p {
+    margin-top: 2rem;
+  }
   .index-main .titulo-index {
     text-align: center;
     font-size: 2rem;
-    margin-top: 1.5rem; }
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+  }
   .index-main .parrafo-index {
     text-align: center;
     font-size: 1.2rem;
     margin-top: 2rem;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1.5rem;
+  }
   /*SOBREMI mobile*/
   .titulo-sobremi {
     text-align: center;
     font-size: 2rem;
     margin-top: 2rem;
-    margin-bottom: 1.2rem; }
+    margin-bottom: 1.2rem;
+  }
   .parrafo-sobremi {
     text-align: center;
     font-size: 1.2rem;
     margin-top: 1.2rem;
-    margin-bottom: 1.2rem; }
+    margin-bottom: 1.2rem;
+  }
   .parrafo-sobremi-dos {
     text-align: center;
     font-size: 1rem;
     margin-top: 1.2rem;
-    margin-bottom: 1.2rem; }
+    margin-bottom: 1.2rem;
+  }
   .image-container-uno {
+    margin: 1rem;
     display: flex;
-    flex-direction: row; }
-    .image-container-uno .cliente1 {
-      width: 15rem;
-      height: 12rem;
-      margin: 1rem; }
-    .image-container-uno .cliente2 {
-      width: 15rem;
-      height: 12rem;
-      margin: 1rem; }
+    flex-direction: row;
+  }
+  .image-container-uno .cliente-uno {
+    width: 10rem;
+    height: 8rem;
+  }
+  .image-container-uno .cliente-dos {
+    width: 10rem;
+    height: 8rem;
+  }
   /* RESUME mobile*/
   .titulo-resume {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 2rem;
-    margin-bottom: 1.2rem; }
+    margin-bottom: 1.2rem;
+  }
   .parrafor-resume-uno {
     text-align: center;
     font-size: 0.8rem;
     margin-top: 1.2rem;
-    margin-bottom: 1.2rem; }
+    margin-bottom: 1.2rem;
+  }
   .parrafo-resume-dos {
     text-align: center;
     font-size: 0.8rem;
     margin-top: 1.2rem;
-    margin-bottom: 0.8rem; }
+    margin-bottom: 0.8rem;
+  }
   .texto1 {
     text-align: center;
     display: flex;
-    margin-left: 0.3rem; }
-    .texto1 .costa1 {
-      width: 25rem;
-      height: 10rem; }
+    margin-left: 0.3rem;
+  }
+  .texto1 .costa1 {
+    width: 25rem;
+    height: 10rem;
+  }
   .texto2 {
     text-align: center;
     display: flex;
     font-size: 0.8rem;
-    margin-left: 0.3rem; }
+    margin-left: 0.3rem;
+  }
   .familia {
     width: 25rem;
-    height: 10rem; } }
-
-/* EXPERIENCIA mobile*/
-.titulo-experiencia {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 1.2rem; }
-
-.parrafo-experiencia {
-  text-align: center;
-  font-size: 1rem;
-  margin-top: 1.2rem; }
-
-/* CONTACTO mobile*/
-.main-contacto {
-  text-align: center; }
+    height: 10rem;
+  }
+  /* EXPERIENCIA mobile*/
+  .titulo-experiencia {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1.2rem;
+    margin-right: 1.2rem;
+  }
+  .parrafo-experiencia {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1.2rem;
+    margin-right: 1.2rem;
+  }
+  /* CONTACTO mobile*/
+  .main-contacto {
+    text-align: center;
+  }
   .main-contacto .titulo-contacto {
     text-align: center;
     font-size: 2rem;
-    font-size: large;
     margin-top: 2rem;
-    text-transform: uppercase; }
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+  }
   .main-contacto .parrafo-contacto,
   .main-contacto .parrafo-contacto-uno,
   .main-contacto .parrafo-contacto-dos,
@@ -231,8 +368,160 @@ main p {
     text-align: center;
     font-size: 0.8rem;
     margin-top: 1.2rem;
-    margin-right: 1.2rem; }
+    margin-right: 1.2rem;
+  }
   .main-contacto .contacto {
     width: 15rem;
     height: 10rem;
-    margin-left: 4rem; }
+  }
+}
+/*Inicio tablet*/
+@media (min-width: 576px) and (max-width: 768px) {
+  .body-fondo {
+    background-image: url(../img/FoNDo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .logo-principal {
+    display: flex;
+  }
+  .logo-principal .logo {
+    height: 8rem;
+    width: 15rem;
+    margin: auto;
+  }
+  .navbar {
+    box-shadow: none;
+    background-color: white;
+    text-transform: uppercase;
+  }
+  .navbar .navbar-collapse {
+    display: flex;
+    text-align: end;
+  }
+  .navbar .navbar-collapse .nav-link {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black;
+  }
+  /*Html Index*/
+  .index-main {
+    background-image: url(../img/FoNDo.jpg);
+    background-size: cover;
+    text-align: center;
+  }
+  .index-main .titulo-index {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+  .index-main .parrafo-index {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  /*Html SobreMi*/
+  .main-sobremi {
+    background-image: url(../img/FoNDo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  .main-sobremi .titulo-sobremi {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .main-sobremi .parrafo-sobremi {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .main-sobremi .parrafo-sobremi-dos {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .main-sobremi .cliente-uno {
+    margin-top: 2rem;
+  }
+  .main-sobremi .cliente-dos {
+    margin-top: 2rem;
+  }
+  /*Html Resume*/
+  .main-resume {
+    background-image: url(../img/FoNDo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  .main-resume .titulo-resume {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .main-resume .parrafo-resume-uno {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 2rem;
+  }
+  .main-resume .parrafo-resume-dos {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 2rem;
+  }
+  .main-resume .texto1 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .main-resume .texto2 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  /*Html Experiencia*/
+  .main-experiencia {
+    background-image: url(../img/FoNDo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  .experiencia {
+    margin-top: 2rem;
+  }
+  /*Html Contacto*/
+  .main-contacto {
+    background-image: url(../img/FoNDo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  .titulo-contacto {
+    text-transform: uppercase;
+  }
+  .contacto {
+    width: 18rem;
+    height: 16rem;
+  }
+  /*Footer tablet*/
+  footer {
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+  }
+  footer p {
+    margin-top: 2rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

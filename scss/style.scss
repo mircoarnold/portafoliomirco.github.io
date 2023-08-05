@@ -3,18 +3,27 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
+    
+    }
+
+//Mixin para footer
+/*Mixin para footer*/
+@mixin estilos{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #009097;
 }
-
-
 //Body todos html
 /*Body todos html*/
-body {
-    background-image: url(../img/FoNDo.jpeg);
+body {  
+    background-image: url(../img/FoNDo.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 //Header 
 /*Header todos los html*/
 header {
+    background-color: white;
     .logo-principal {
         background-color: white;
         display: inline-block;
@@ -26,16 +35,24 @@ header {
     }
 }
 footer{
+    @include estilos;
     background-color: none;
     text-align: center;
-    color: black;
     font-size: large;
+    margin-top: 2rem;
+
 }
 //Index html
 /*Index html*/
 
 .index-main {
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    .titulo-index{
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
 
     .imagen-index {
         width: 350px;
@@ -66,20 +83,43 @@ footer{
 
     //Sobre mi
     /*Sobre Mi*/
+    .main-sobremi{   
+        background-image: url(../img/FoNDo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .titulo-sobremi{
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .parrafo-sobremi{
+        font-size: 1.2rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .parrafo-sobremi-dos{
+        font-size: 1.2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
     .image-container-uno{
         display: flex;
         justify-content: center;
         
-        .cliente1 {
+        
+        .cliente-uno{
             width: 20rem;
-            height: 20rem;
+            height: 18rem;
             padding-right: 2rem;
             
         }
     
-        .cliente2 {
+        .cliente-dos{
             width: 20rem;
-            height: 20rem;
+            height: 18rem;
             }
 }
 
@@ -95,10 +135,31 @@ a {
 
 /* resume */
 .main-resume{
+    background-image: url(../img/FoNDo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    .titulo-resume{
+        font-size: 2rem;
+        margin: 2rem;
+    }
+    .parrafo-resume-uno{
+        
+        margin-right: 2rem;
+        margin-left: 2rem;
+        font-size: 1.2rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    .parrafo-resume-dos{
+        
+        margin-right: 2rem;
+        margin-left: 2rem;
+        font-size: 1.2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
     .costa1 {
         width: 20rem;
         height: 20rem;
@@ -129,7 +190,15 @@ a {
 
 
 .main-experiencia {
+    background-image: url(../img/FoNDo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
+    .titulo-experiencia{
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
     .experiencia{
         width: 20rem;
         height: 20rem;
@@ -138,27 +207,49 @@ a {
 
 /* contacto */
 .main-contacto {
-    text-align: center;
-
+    background-image: url(../img/FoNDo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: cadetblue;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;    
+    .titulo-contacto{
+            font-size: 2.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+    
+    }
+    .formulario-contacto{
+        display: flex;
+       justify-content: center;
+    }
 }
 
 /* Estilos generales para dispositivos móviles y de escritorio */
 h1 {
-    font-size: 24px;
+    color: cadetblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    
 }
 
 main p {
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: none;
-    color: rgba(88, 36, 5, 0.87);
+    color: rgba(20, 20, 19, 0.87);
     text-align: center;
 }
 
 /* Estilos específicos para dispositivos móviles */
 /*Arrancamos con mobile first */
  
-@media (max-width:575.98px) {
+@media (max-width:575px) {
+.body-fondo{
+    background-image: url(../img/FoNDo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
  /*INICIO mobile*/
     .logo-principal{
         display: flex;
@@ -198,10 +289,12 @@ main p {
 
    
     .index-main{
+        
         .titulo-index {
             text-align: center;
             font-size: 2rem;
-            margin-top: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
     
         }
         .parrafo-index {
@@ -233,24 +326,27 @@ main p {
         margin-bottom: 1.2rem;
     }
     .image-container-uno{
+        margin: 1rem;
         display: flex;
         flex-direction: row;
-        .cliente1{
-            width: 15rem;
-            height: 12rem;
-            margin: 1rem;
+        
+        .cliente-uno{
+            width: 10rem;
+            height: 8rem;
+           
+            
         }
-        .cliente2{
-            width: 15rem;
-            height: 12rem;
-            margin: 1rem;
+        .cliente-dos{
+            width: 10rem;
+            height: 8rem;
+            
         }
     }
 
     /* RESUME mobile*/
     .titulo-resume {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin-top: 2rem;
         margin-bottom: 1.2rem;
     }
@@ -289,19 +385,18 @@ main p {
             width: 25rem;
             height: 10rem;
             }
-    }
-    
-
-    /* EXPERIENCIA mobile*/
+            /* EXPERIENCIA mobile*/
     .titulo-experiencia {
         font-size:1.5rem;
         text-align: center;
         margin-top:1.2rem;
+        margin-right: 1.2rem;
     }
     .parrafo-experiencia {
         text-align: center;
         font-size: 1rem;
         margin-top: 1.2rem;
+        margin-right: 1.2rem;
     }
 
     
@@ -309,18 +404,13 @@ main p {
     /* CONTACTO mobile*/
     .main-contacto{
         text-align: center;
-        .mapa-contacto{
-
+        .titulo-contacto{
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 1.2rem;
+        text-transform: uppercase;
         }
-        .titulo-contacto {
-            text-align: center;
-            font-size: 2rem;
-            font-size: large;
-            margin-top: 2rem;
-            text-transform: uppercase;
-        
-        }
-
     .parrafo-contacto,
     .parrafo-contacto-uno,
     .parrafo-contacto-dos,
@@ -333,9 +423,173 @@ main p {
     .contacto{
         width: 15rem;
         height: 10rem;
-        margin-left: 4rem;
     }
     }
+}
+    //Inicio Tablet 
+    /*Inicio tablet*/
+    @media (min-width: 576px ) and (max-width: 768px){
+    .body-fondo{
+    background-image: url(../img/FoNDo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    
+    .logo-principal{
+        display: flex;
+        
+        .logo{
+            height: 8rem;
+            width: 15rem;
+            margin: auto;
+        }
+    }
+    .navbar {
+        box-shadow: none;
+        background-color: white;
+        text-transform: uppercase;
+        .navbar-collapse {
+            display: flex;
+            text-align: end;
+            .nav-link {
+                font-size: 1.2rem;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: black;
+            }
+        }
+        
+    }
+    //Html Index
+    /*Html Index*/
+    .index-main{
+    background-image: url(../img/FoNDo.jpg);
+    background-size: cover;
+    text-align: center;
+    .titulo-index {
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 1.5rem;
+
+    }
+    .parrafo-index {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    }
+    //Html SobreMi
+    /*Html SobreMi*/
+    .main-sobremi{
+    background-image: url(../img/FoNDo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    .titulo-sobremi{
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .parrafo-sobremi{
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .parrafo-sobremi-dos{
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .cliente-uno{
+        margin-top: 2rem;
+    }
+    .cliente-dos{
+        margin-top: 2rem;
+    }
+    }
+    //Html Resume
+    /*Html Resume*/
+    .main-resume{
+    background-image: url(../img/FoNDo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    .titulo-resume{
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        
+    }
+    .parrafo-resume-uno{
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 2rem;
+    }
+    .parrafo-resume-dos{
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 2rem;
+    }
+    .texto1{
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .texto2{
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    }
+    //Html Experiencia
+    /*Html Experiencia*/
+    .main-experiencia{
+    background-image: url(../img/FoNDo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    }
+    .experiencia{
+        margin-top: 2rem;
+    }
+    //Html Contacto
+    /*Html Contacto*/
+    .main-contacto{
+    background-image: url(../img/FoNDo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    }
+    .titulo-contacto{
+        text-transform: uppercase;
+    }
+    .contacto{
+        width: 18rem;
+        height: 16rem;
+    }
+    
+    
+    //Footer tablet
+    /*Footer tablet*/
+    footer {
+        text-align: center;
+        font-size: 1rem;
+        color: black;
+        p{
+            margin-top: 2rem;
+        }
+    }
+
+}
+    
 
     
 
